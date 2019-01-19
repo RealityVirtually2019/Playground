@@ -8,6 +8,9 @@ ModelImporter:
     400000: //RootNode
     400002: rock_large2
     2100000: rock_large2Mat
+    2100002: natureKit-wood
+    2100004: natureKit-leavesGreen
+    2100006: natureKit-_defaultMat
     2300000: rock_large2
     3300000: rock_large2
     4300000: rock_large2

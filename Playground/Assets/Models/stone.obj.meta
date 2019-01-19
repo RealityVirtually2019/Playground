@@ -8,6 +8,7 @@ ModelImporter:
     400000: //RootNode
     400002: stone_large2
     2100000: stone_large2Mat
+    2100002: natureKit-stone
     2300000: stone_large2
     3300000: stone_large2
     4300000: stone_large2
