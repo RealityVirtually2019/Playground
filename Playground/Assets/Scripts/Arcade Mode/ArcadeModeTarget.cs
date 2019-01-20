@@ -27,7 +27,7 @@
         {
             //check how far from center
 
-            if (other.tag == "AxeTip" && !other.GetComponent<Axe>().scored)
+            if (other.tag == "AxeTip")
             {
                 other.GetComponent<Axe>().scored = true;
                 StartCoroutine(OnTargetHit(other.gameObject));
