@@ -16,8 +16,8 @@ GameObject:
   - component: {fileID: 136000427245093374}
   - component: {fileID: 114348212915737354}
   - component: {fileID: 114289631477288678}
-  - component: {fileID: 114970622100519976}
   - component: {fileID: 2383631624844877089}
+  - component: {fileID: 6544108346625598641}
   m_Layer: 0
   m_Name: Throwable_Axe
   m_TagString: Axe
@@ -188,21 +188,6 @@ MonoBehaviour:
   intervalOnUse: 0
   cancelOnUnuse: 0
   objectToAffect: {fileID: 0}
---- !u!114 &114970622100519976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1303908755927682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d000db790719a94da395528a55620c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scored: 0
-  ballSpiralVelocity: {x: 1, y: 0, z: 0}
-  maxSpiralSpeed: 200
 --- !u!65 &2383631624844877089
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -216,6 +201,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38505593, y: 0.042235613, z: 0.07933211}
   m_Center: {x: -0.016398504, y: -0.023261666, z: 0.05037105}
+--- !u!114 &6544108346625598641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303908755927682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a7d38cbca8b35d4b9aa91d2b61f54b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scored: 0
+  ballSpiralVelocity: {x: 1, y: 0, z: 1}
+  maxSpiralSpeed: 0
 --- !u!1 &1867360041029274
 GameObject:
   m_ObjectHideFlags: 0

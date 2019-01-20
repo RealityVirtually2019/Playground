@@ -66,10 +66,7 @@
             faceVelocity = false;
         }
 
-        [SerializeField]
-        Vector3 ballSpiralVelocity = new Vector3(0, 0, 1);
-        [SerializeField]
-        float maxSpiralSpeed;
+
         protected virtual void OnObjectUnGrab(object sender, InteractableObjectEventArgs e)
         {
             StartCoroutine(BallReleaseBehaviour());
