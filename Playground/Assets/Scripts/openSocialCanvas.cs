@@ -4,20 +4,17 @@ using UnityEngine;
 
 public class openSocialCanvas : MonoBehaviour
 {
+    public GameObject canvas;
 
-    private IEnumerator time;
     // Start is called before the first frame update
     void Start()
     {
-        time = waitTime(45.0f);
-        StartCoroutine("waitTime");
+        StartCoroutine(waitTime());
     }
     
-    private IEnumerator waitTime(float time)
+    private IEnumerator waitTime()
     {
-        while (true)
-        {
-            yield return new WaitForSeconds(time);
-        }
+            yield return new WaitForSeconds(45);
+            canvas.SetActive(true);
     }
 }

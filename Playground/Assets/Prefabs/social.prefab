@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5785816297590016351}
   - component: {fileID: 2029818793198458904}
   - component: {fileID: 1740723846475001566}
+  - component: {fileID: 6318225360146725145}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -200,6 +201,19 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!65 &6318225360146725145
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5785816297590016345}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5785816297607737423
 GameObject:
   m_ObjectHideFlags: 0
