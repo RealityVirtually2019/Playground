@@ -33,7 +33,7 @@
 
                 // other.GetComponent<Axe>().scored = true;
                 transform.parent.DOPunchScale(Vector3.one / 2, punchScaleTime, 1, 0);
-                StartCoroutine(OnTargetHit(collision.gameObject));
+                // StartCoroutine(OnTargetHit(collision.gameObject));
             }
 
         }
