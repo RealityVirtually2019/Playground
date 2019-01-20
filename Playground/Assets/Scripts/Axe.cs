@@ -115,9 +115,9 @@
                 yield return new WaitForEndOfFrame();
                 calculatedRot = Quaternion.LookRotation(rb.velocity) * initialRotation;
                 transform.localRotation = calculatedRot;
-
-
             }
+                yield return null;
+
 
         }
 
