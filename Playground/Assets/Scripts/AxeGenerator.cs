@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AxeGenerator : MonoBehaviour
 {
-    public gameObject axe;
+    public GameObject axe;
 
     // Start is called before the first frame update
     void Start()
