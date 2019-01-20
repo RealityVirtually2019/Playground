@@ -11,6 +11,7 @@ TagManager:
   - TeleportIgnore
   - Ground
   - AxeTip
+  - Axe
   layers:
   - Default
   - TransparentFX
