@@ -65,6 +65,7 @@
      <Compile Include="Assets\Scripts\Arcade Mode\ArcadeModeTarget.cs" />
      <Compile Include="Assets\Scripts\Axe.cs" />
      <Compile Include="Assets\Scripts\AxeGenerator.cs" />
+     <Compile Include="Assets\Scripts\AxeTarget.cs" />
      <Compile Include="Assets\Scripts\BallSpwaner.cs" />
      <Compile Include="Assets\Scripts\Football.cs" />
      <Compile Include="Assets\Scripts\PullTowards.cs" />
