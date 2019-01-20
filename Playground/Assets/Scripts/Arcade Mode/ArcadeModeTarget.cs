@@ -29,7 +29,10 @@
 
             if (collision.gameObject.tag == "AxeTip")
             {
+                collision.gameObject.GetComponentInParent<Rigidbody>().isKinematic = true;
+
                 // other.GetComponent<Axe>().scored = true;
+                transform.parent.DOPunchScale(Vector3.one / 2, punchScaleTime, 1, 0);
                 StartCoroutine(OnTargetHit(collision.gameObject));
             }
 
@@ -38,22 +41,21 @@
         float punchScaleTime = 0.2f;
 
 
-        IEnumerator OnTargetHit(GameObject ballThatHit)
-        {
+        // IEnumerator OnTargetHit(GameObject ballThatHit)
+        // {
 
-            // ArcadeGameModeManager.instance.Score(Vector3.Distance(ballThatHit.transform.position, transform.position), transform);
-            //theres a oncomplete function I can use
-            transform.parent.DOPunchScale(Vector3.one / 2, punchScaleTime, 1, 0);
-            ballThatHit.GetComponentInParent<Rigidbody>().isKinematic = true;
-
-            yield return null;
-
-            // yield return new WaitForSeconds(punchScaleTime);
-
-            // transform.localScale = startScale;
+        //     // ArcadeGameModeManager.instance.Score(Vector3.Distance(ballThatHit.transform.position, transform.position), transform);
+        //     //theres a oncomplete function I can use
 
 
+        //     yield return null;
 
-        }
+        //     // yield return new WaitForSeconds(punchScaleTime);
+
+        //     // transform.localScale = startScale;
+
+
+
+        // }
     }
 }
