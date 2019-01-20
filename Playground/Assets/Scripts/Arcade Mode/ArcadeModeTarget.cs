@@ -44,7 +44,7 @@
             // ArcadeGameModeManager.instance.Score(Vector3.Distance(ballThatHit.transform.position, transform.position), transform);
             //theres a oncomplete function I can use
             transform.DOPunchScale(Vector3.one / 2, punchScaleTime, 1, 0);
-            ballThatHit.GetComponent<Rigidbody>().isKinematic = true;
+            ballThatHit.GetComponentInParent<Rigidbody>().isKinematic = true;
 
             yield return null;
 
