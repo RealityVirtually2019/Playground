@@ -29,7 +29,7 @@
 
             if (other.tag == "AxeTip")
             {
-                other.GetComponent<Axe>().scored = true;
+                // other.GetComponent<Axe>().scored = true;
                 StartCoroutine(OnTargetHit(other.gameObject));
             }
 
