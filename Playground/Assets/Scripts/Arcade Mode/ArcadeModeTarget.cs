@@ -32,7 +32,7 @@ private void OnTriggerEnter(Collider other)
                 other.gameObject.GetComponentInParent<Rigidbody>().isKinematic = true;
 
                 // other.GetComponent<Axe>().scored = true;
-                transform.parent.DOPunchScale(Vector3.one / 2, punchScaleTime, 1, 0);
+                transform.parent.DOPunchScale(Vector3.one / 3, punchScaleTime, 1, 0);
                 // StartCoroutine(OnTargetHit(collision.gameObject));
             }
 

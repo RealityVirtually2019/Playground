@@ -69,6 +69,7 @@
      <Compile Include="Assets\Scripts\Football.cs" />
      <Compile Include="Assets\Scripts\PullTowards.cs" />
      <Compile Include="Assets\Scripts\Target.cs" />
+     <Compile Include="Assets\Scripts\UIDoTween.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_Teleporter.cs" />

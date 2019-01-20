@@ -81,6 +81,7 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
+<<<<<<< HEAD
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -92,6 +93,8 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
+=======
+>>>>>>> 2f8dbe13c95fb7e47e643befd7fad46bf54a62c8
     buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
