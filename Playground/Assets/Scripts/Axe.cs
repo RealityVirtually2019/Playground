@@ -109,13 +109,13 @@
 
             //make ball face the direction of velocity
             //need to implement ball spin depending on velocity
-            faceVelocity = true;
-            while (faceVelocity)
-            {
-                yield return new WaitForEndOfFrame();
-                calculatedRot = Quaternion.LookRotation(rb.velocity) * initialRotation;
-                transform.localRotation = calculatedRot;
-            }
+            // faceVelocity = true;
+            // while (faceVelocity)
+            // {
+            //     yield return new WaitForEndOfFrame();
+            //     calculatedRot = Quaternion.LookRotation(rb.velocity) * initialRotation;
+            //     transform.localRotation = calculatedRot;
+            // }
                 yield return null;
 
 
