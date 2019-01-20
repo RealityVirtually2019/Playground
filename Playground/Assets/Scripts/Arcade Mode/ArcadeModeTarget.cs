@@ -23,14 +23,14 @@
 
         }
 
-        private void OnTriggerEnter(Collider other)
+        void OnCollisionEnter(Collision collision)
         {
             //check how far from center
 
-            if (other.tag == "AxeTip")
+            if (collision.gameObject.tag == "AxeTip")
             {
                 // other.GetComponent<Axe>().scored = true;
-                StartCoroutine(OnTargetHit(other.gameObject));
+                StartCoroutine(OnTargetHit(collision.gameObject));
             }
 
         }
@@ -43,7 +43,7 @@
 
             // ArcadeGameModeManager.instance.Score(Vector3.Distance(ballThatHit.transform.position, transform.position), transform);
             //theres a oncomplete function I can use
-            transform.DOPunchScale(Vector3.one / 2, punchScaleTime, 1, 0);
+            transform.parent.DOPunchScale(Vector3.one / 2, punchScaleTime, 1, 0);
             ballThatHit.GetComponentInParent<Rigidbody>().isKinematic = true;
 
             yield return null;
