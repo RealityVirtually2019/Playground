@@ -44,7 +44,7 @@ public class PullTowards : MonoBehaviour
     float distanceFromPlayer;
     void SetupAimAssist()
     {
-        distanceFromPlayer = Vector3.Distance(transform.position, ArcadeGameModeManager.instance.transform.position);
+        // distanceFromPlayer = Vector3.Distance(transform.position, ArcadeGameModeManager.instance.transform.position);
         float distancePercentage = distanceFromPlayer / maxDistanceFromPlayer;
         gameObject.GetComponent<CapsuleCollider>().height = aimAssistSettings.distanceAimAssistLength.Evaluate(distancePercentage);
         gameObject.GetComponent<CapsuleCollider>().radius = aimAssistSettings.distanceAimAssistRadius.Evaluate(distancePercentage);

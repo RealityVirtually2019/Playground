@@ -11,8 +11,8 @@
         // Use this for initialization
         void Start()
         {
-            transform.LookAt(ArcadeGameModeManager.instance.transform.position);
-            transform.Rotate(-90, 0, 0);
+            // transform.LookAt(ArcadeGameModeManager.instance.transform.position);
+            // transform.Rotate(-90, 0, 0);
             // //transform.rotation = Quaternion.Euler(-90,0,transform.rotation.eulerAngles.z);
             // startScale = transform.localScale;
         }
@@ -27,9 +27,9 @@
         {
             //check how far from center
 
-            if (other.tag == "Football" && !other.GetComponent<Football>().scored)
+            if (other.tag == "AxeTip" && !other.GetComponent<Axe>().scored)
             {
-                other.GetComponent<Football>().scored = true;
+                other.GetComponent<Axe>().scored = true;
                 StartCoroutine(OnTargetHit(other.gameObject));
             }
 
@@ -41,9 +41,10 @@
         IEnumerator OnTargetHit(GameObject ballThatHit)
         {
 
-            ArcadeGameModeManager.instance.Score(Vector3.Distance(ballThatHit.transform.position, transform.position), transform);
+            // ArcadeGameModeManager.instance.Score(Vector3.Distance(ballThatHit.transform.position, transform.position), transform);
             //theres a oncomplete function I can use
             transform.DOPunchScale(Vector3.one / 2, punchScaleTime, 1, 0);
+            ballThatHit.GetComponent<Rigidbody>().isKinematic = true;
 
             yield return null;
 

@@ -2,39 +2,42 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BallSpwaner : MonoBehaviour {
+public class BallSpwaner : MonoBehaviour
+{
 
-    public GameObject footBallPrefab;
+    public GameObject axePrefab;
     private bool empty;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         empty = true;
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update()
+    {
 
         if (empty)
         {
-            Instantiate(footBallPrefab, transform.position, Quaternion.identity);            
+            Instantiate(axePrefab, transform.position, Quaternion.identity);
         }
         //Instantiate(basketBall, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity);
     }
 
     private void OnTriggerStay(Collider other)
     {
-       
-            if(other.tag == "Football")
+
+        if (other.tag == "Axe")
         {
             empty = false;
 
-            }
+        }
 
     }
     private void OnTriggerExit(Collider other)
     {
-        if(other.tag == "Football")
+        if (other.tag == "Axe")
         {
             empty = true;
 

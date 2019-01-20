@@ -61,7 +61,6 @@
      <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
      <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
      <Compile Include="Assets\Scripts\AimAssistSettings.cs" />
-     <Compile Include="Assets\Scripts\Arcade Mode\ArcadeGameModeManager.cs" />
      <Compile Include="Assets\Scripts\Arcade Mode\ArcadeModeTarget.cs" />
      <Compile Include="Assets\Scripts\Axe.cs" />
      <Compile Include="Assets\Scripts\AxeGenerator.cs" />
