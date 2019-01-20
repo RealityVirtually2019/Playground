@@ -23,13 +23,13 @@
 
         }
 
-        void OnCollisionEnter(Collision collision)
-        {
+private void OnTriggerEnter(Collider other)
+    {
             //check how far from center
 
-            if (collision.gameObject.tag == "AxeTip")
+            if (other.gameObject.tag == "AxeTip")
             {
-                collision.gameObject.GetComponentInParent<Rigidbody>().isKinematic = true;
+                other.gameObject.GetComponentInParent<Rigidbody>().isKinematic = true;
 
                 // other.GetComponent<Axe>().scored = true;
                 transform.parent.DOPunchScale(Vector3.one / 2, punchScaleTime, 1, 0);
