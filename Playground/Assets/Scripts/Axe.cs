@@ -107,8 +107,6 @@
                 rb.velocity = new Vector3(rb.velocity.x * (1 + Mathf.Abs(rb.velocity.y / 6)), 3f, rb.velocity.z * (1 + Mathf.Abs(rb.velocity.y / 6)));
             }
 
-            //make ball face the direction of velocity
-            //need to implement ball spin depending on velocity
             // faceVelocity = true;
             // while (faceVelocity)
             // {
