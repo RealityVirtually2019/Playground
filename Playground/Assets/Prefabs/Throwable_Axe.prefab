@@ -199,8 +199,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.38505593, y: 0.042235613, z: 0.07933211}
-  m_Center: {x: -0.016398504, y: -0.023261666, z: 0.05037105}
+  m_Size: {x: 0.29955944, y: 0.042235613, z: 0.040540457}
+  m_Center: {x: -0.059146747, y: -0.023261666, z: 0.05375111}
 --- !u!114 &6544108346625598641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,8 +287,8 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
   - loadedSDKSetup: {fileID: 0}
     controllerType: 14
-    position: {x: 0, y: 0.0876, z: 0.0389}
-    rotation: {x: -40, y: 0, z: 0}
+    position: {x: 0, y: 0.1, z: 0.1}
+    rotation: {x: 180, y: 0, z: -90}
     scale: {x: 1, y: 1, z: 1}
   - loadedSDKSetup: {fileID: 0}
     controllerType: 13
@@ -320,8 +320,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9003022716617091246}
   m_LocalRotation: {x: -0, y: 0.0605111, z: -0, w: 0.9981676}
-  m_LocalPosition: {x: 0.125, y: -0.02347, z: -0.051}
-  m_LocalScale: {x: 0.1085295, y: 0.028634822, z: 0.10017367}
+  m_LocalPosition: {x: 0.127, y: -0.02347, z: -0.033}
+  m_LocalScale: {x: 0.15368862, y: 0.028634822, z: 0.21289985}
   m_Children: []
   m_Father: {fileID: 4271277113805690}
   m_RootOrder: 2
