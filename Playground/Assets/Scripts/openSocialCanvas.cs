@@ -14,7 +14,7 @@ public class openSocialCanvas : MonoBehaviour
     
     private IEnumerator waitTime()
     {
-            yield return new WaitForSeconds(45);
+            yield return new WaitForSeconds(200);
             canvas.SetActive(true);
     }
 }

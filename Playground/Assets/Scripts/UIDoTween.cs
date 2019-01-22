@@ -27,7 +27,7 @@ public class UIDoTween : MonoBehaviour
 
         transform.GetComponent<RectTransform>().DOAnchorPosY(transform.GetComponent<RectTransform>().anchoredPosition.y - difference, 1f);
         transform.GetComponent<Image>().DOColor(Color.white, 1f);
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(10);
         transform.GetComponent<Image>().DOColor(Color.clear, 1f);
 
 
